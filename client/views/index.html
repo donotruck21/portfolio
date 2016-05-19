@@ -1,0 +1,282 @@
+<html>
+<head>
+	<title>Donovan An | Full Stack Developer</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<!-- Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- end of materialize -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#scrollToPortfolio").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#portfolio").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$("#scrollToAboutMe").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#aboutMe").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$(".back-to-top").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#hero").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$(window).scroll(function(){
+				if($(window).scrollTop() > 500){
+					$("a.back-to-top").fadeIn("slow")
+				} else {
+					$("a.back-to-top").fadeOut("slow")
+				}
+			})
+
+			$('.modal-trigger').leanModal();
+		})
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+
+	  	<div id="hero">
+	    	<div class="header">
+	    		<a href="#" id="scrollToAboutMe">
+	    			<img class="circle" src="images/profile2.jpg" height=120>
+	    		</a><br><br>
+	      		<h1>Hello. My name is Donovan.</h1>
+	      		<h1>Let's build together.</h1><br>
+	      		<a href="#" id="scrollToPortfolio">
+	      			<p class="learnMore"><b>Learn more about what I do</b></p>
+	      			<i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i>
+	      		</a>
+	    	</div>
+	  	</div>
+
+	  	<div id="portfolio">
+	    	<h2>PORTFOLIO</h2>
+
+	    	<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/wedding2.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Melanie and Nate<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="http://www.melandnatemexico.com/">View the Website</a></p>
+			      	<!-- Modal Trigger -->
+				  	<a class="modal-trigger" href="#modal1">Client Review</a>
+
+				  	<!-- Modal Structure -->
+				  	<div id="modal1" class="modal">
+				    	<div class="modal-content">
+				      		<h4>Melanie and Nate</h4>
+				      		<p>"We love the website! It was exactly how we imagined but better. The page is clean, minimalistic and beautiful. It was such a pleasure working with Donovan. We had a ton of features we wanted on the page, and Donovan was more than knowledgable. We couldn't be more happy!"</p>
+				      		<p>~Melanie</p>
+				    	</div>
+				    	<div class="modal-footer">
+				      		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+				    	</div>
+				  	</div>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Melanie & Nate<i class="material-icons right">close</i></span>
+			      	<p class="blackText">I had the privilege of working with my close friends, Melanie and Nate, to build out their wedding website. Their wedding will take place in Mexico, so the page required a number of specifications. I implemented a handful of APIs and widgets including Google Maps, Facebook, TripAdvisor, and Crate and Barrel. <b> Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">PostgreSQL</li>
+			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">AWS</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/stack.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Stack Underflow<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="http://52.40.53.219/">View the Website</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Stack Underflow<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A simple recreation of Stack Overflow. The page allows users to post questions, answer questions, and upvote answers. Full use of Angular.js so user input is rendered immediately, creating for a smooth user interface. <b> Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">MongoDB</li>
+			      			<li class="blackText">Node.js</li>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">Express.js</li>
+			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">AWS</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/secrets2.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Secrets<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="http://www.dojo-secrets.com/">View the Website</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Secrets<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A fun web application created for posting secrets from the Coding Dojo anonymously. Full log in and registration, standard CRUD operations on users and secrets, and backend security features to prevent hacking and viewing others' secrets. <b> Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">PostgreSQL</li>
+			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">AWS</li>
+			      		</ul>
+			      	</p> 
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/nba2.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">NBA Associations<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="https://github.com/donotruck21/nba_associations">View on GitHub</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">NBA Associations<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A web application that utilizes Angular's two-way data binding and partial loading. The application uses a Rails backend as an API which renders JSON data to the Angular controller. <b> Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">SQLite</li>
+			      			<li class="blackText">Bootstrap</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/store3.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">MEAN Store<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="https://github.com/donotruck21/mini_mean">View on GitHub</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">MEAN Store<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A simple recreation of an eCommerce web application. A user can register an account, add products to the database, and place orders. <b> Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">MongoDB</li>
+			      			<li class="blackText">Express.js</li>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">Node.js</li>
+			      			<li class="blackText">Bootstrap</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+	  	</div> <!-- end of portfolio -->
+
+
+	  	<div id="hero2">
+		  	<div id="technologies">
+		    	<h2>TECHNOLOGIES</h2>
+
+		    	<div class="languages techbox">
+		    		<h4>Languages</h4>
+		    		<img class="logoimg" src="images/python-logo.png">
+		    		<img class="logoimg" src="images/ruby-logo.png">
+		    		<img class="logoimg" src="images/html-logo.png">
+		    		<img class="logoimg" src="images/css-logo.png">
+		    	</div>
+
+		    	<div class="frameworks techbox">
+		    		<h4>Frameworks</h4>
+		    		<img class="logoimg" src="images/django-logo.png">
+		    		<img class="logoimg" src="images/flask-logo.png">
+		    		<img class="logoimg" src="images/rails-logo.png">
+		    		<img class="logoimg" src="images/angularjs-logo.png">
+		    	</div>
+
+		    	<div class="libraries techbox">
+		    		<h4>Libraries</h4>
+		    		<img class="logoimg" src="images/jquery-logo.png">
+		    		<img class="logoimg" src="images/bootstrap-logo.png">
+		    		<img class="logoimg" src="images/materialize-logo.png">
+		    	</div>
+
+		    	<div class="databases techbox">
+		    		<h4>Databases</h4>
+		    		<img class="logoimg" src="images/mysql-logo.png">
+		    		<img class="logoimg" src="images/sqllite-logo.png">
+		    		<img class="logoimg" src="images/postgresql-logo.png">
+		    		<img class="logoimg" src="images/mongodb-logo.png">
+		    	</div>
+
+		    	<div class="servers techbox">
+		    		<h4>Servers</h4>
+		    		<img class="logoimg" src="images/aws-logo.png">
+		    		<img class="logoimg" src="images/heroku-logo.png">
+		    		<img class="logoimg" src="images/mamp-logo.png">
+		    	</div>
+
+		    	<div class="devTools techbox">
+		    		<h4>Developement Tools</h4>
+		    		<img class="logoimg" src="images/sublime-logo.png">
+		    		<img class="logoimg" src="images/terminal-logo.png">
+		    		<img class="logoimg" src="images/github-logo.png">
+		    	</div>
+		  	</div> <!-- end of tech -->
+	  	</div> <!-- end of hero2 -->
+	  	
+
+
+	  	<div id="aboutMe">
+	  		<h2>ABOUT ME</h2>
+	  		<p>Musician, Carpenter, Sports-enthusiast, <span class="orangeText">Programmer</span></p>
+	  	</div>
+
+
+
+
+
+
+
+
+
+
+
+	  	<div id="footer">
+	  		<h2>CONTACT</h2>
+	    	<h5>Please feel free to reach out with any questions!</h5>
+	    	<a href="mailto:donovantaean@yahoo.com" class="email">donovantaean@yahoo.com</a>
+	    	<br><br>
+
+	    	<a href="https://github.com/donotruck21"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+	    	<a href="https://www.linkedin.com/in/donovan-an-219a91a9"><i class="pushOut fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+	    	<a href="mailto:donovantaean@yahoo.com"><i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i></a>
+	  	</div>
+	</div>
+	<a href="#" class="back-to-top fa fa-chevron-circle-up fa-3x"></a>
+</body>
+</html>
+
+
+

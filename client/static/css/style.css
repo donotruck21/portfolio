@@ -1,0 +1,178 @@
+*{
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	margin:0px 0px;
+}
+
+#hero{
+  background-image:url(../images/seattle2.jpg);
+  background-size:cover;
+  position:relative;
+  height:100vh;
+}
+
+#hero2{
+  background-image:url(../images/background.jpg);
+  background-size:cover;
+  position:relative;
+  height:100vh;
+}
+
+.header{
+  	position:absolute;
+  	top:50%;
+  	padding-left: 50px;
+  	padding-right: 50px;
+  	text-align:center;
+  	width:100%;
+  	color:#fff;
+  	font-size:36px;
+  	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+
+}
+
+#technologies{
+  	position:absolute;
+  	top:50%;
+  	padding:100px 50px;
+  	/*padding-left: 50px;*/
+  	/*padding-right: 50px;*/
+  	text-align:center;
+  	width:100%;
+  	color:#fff;
+  	font-size:36px;
+  	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+
+}
+
+#technologies h2{
+	/*color: red;*/
+	margin-top: 50px;
+}
+
+#portfolio{
+	background-color: black;
+  	padding:100px 50px;
+  	text-align:center;
+  	width:100%;
+  	margin:0px auto;
+  	color: #fff;
+}
+
+#aboutMe{
+	background-color: black;
+  	padding:100px 50px;
+  	text-align:center;
+  	width:100%;
+  	margin:0px auto;
+  	color: #fff;
+}
+
+#portfolio h2{
+  	margin:0px 0px 30px 0px;
+}
+
+
+#footer{
+  	padding:100px 50px;
+  	text-align:center;
+  	width:100%;
+  	margin:0px auto;
+  	background:#ddd;
+}
+
+.portCard{
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px;
+	box-shadow: 5px 5px 5px #A18C80;
+}
+
+.blackText, .modal-content{
+	color: black;
+}
+
+#scrollToPortfolio{
+	color: orange;
+}
+
+.learnMore{
+	font-size: .6em;
+	margin-bottom: 10px;
+}
+
+a:hover#scrollToPortfolio{
+	color: #C47F00;
+}
+
+.techbox{
+	/*border: 1px dotted red;*/
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	height: 250px;
+	width: 300px;
+}
+
+.logoimg{
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px black;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	text-align: center;
+}
+
+.email{
+	font-size: 1.3em;
+}
+
+
+.pushOut{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+a.back-to-top{
+	display: none;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	color: orange;
+	z-index: 1;
+}
+
+a:hover.back-to-top{
+	color: #C47F00;
+}
+
+.orangeText{
+	color: orange;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
